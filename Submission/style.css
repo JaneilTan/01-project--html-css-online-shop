@@ -1,81 +1,208 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    background-color: #FEFFFE;
-    font-family:'Source Code Pro', monospace;
+  background-color: #fefffe;
+  font-family: "Source Code Pro", monospace;
 }
 .logo {
-    display: grid;
-    width: 10rem;
-    margin: auto;
-    border-radius: 0.5rem;
+  display: grid;
+  width: 10rem;
+  margin: auto;
+  border-radius: 0.5rem;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 li a {
-    display: grid;
-    width: 6.25rem;
-    background-color: #8BDF83;
-    border-style: solid;
-    border-radius: 0.5rem;
-    text-align: center;
-    padding: 1rem 0.5rem;
-    margin: 1rem auto;
-    text-decoration: none;
-    font-weight: 50;
+  display: grid;
+  width: 6.25rem;
+  background-color: #8bdf83;
+  border-style: solid;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  margin: 1rem auto;
+  text-decoration: none;
+  font-weight: 50;
 }
 a:hover {
-   color:#EAECC6;
+  color: #eaecc6;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #3F6660;
+h1,
+h2 {
+  text-align: center;
+  color: #3f6660;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
 .message {
-    font-size: 0.75rem;
-    text-align: center;
-    line-height: 1rem;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1rem;
 }
 .img {
-    width: 100%;
-    margin: auto;
-    
+  width: 100%;
+  margin: auto;
 }
-.plants1, .plants2, .plants3 {
-    margin: 0.5rem auto;
-    border: solid 1px;
-    border-radius: 0.5rem;
-    background-color: #ECE9E6;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    
+.plants1,
+.plants2,
+.plants3 {
+  margin: 0.5rem auto;
+  border: solid 1px;
+  border-radius: 0.5rem;
+  background-color: #ece9e6;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.link1, .link2, .link3 {
-    text-decoration: none;  
+.link1,
+.link2,
+.link3 {
+  text-decoration: none;
 }
-.link1, .link2, .link3:hover {
-    color: #8BDF83;
+.link1,
+.link2,
+.link3:hover {
+  color: #8bdf83;
 }
 
 /*---Product Page---*/
 
 .product-img {
-    display: grid;
-    width: 20rem;
-    margin: 1rem auto;
-    border-radius: 0.65rem;
+  display: grid;
+  width: 20rem;
+  margin: 1rem auto;
+  border-radius: 0.65rem;
 }
 
 .buy-button {
+  display: grid;
+  width: 10rem;
+  background-color: #ffd502;
+  border-style: 1px solid;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  margin: 2rem auto;
+  text-decoration: none;
+  font-weight: 50;
+}
+.buy-button:hover {
+  color: #eaecc6;
+}
+.product-description {
+  display: grid;
+  background-color: #eaeaea;
+  border-style: groove;
+  border-radius: 0.65rem;
+  text-align: justify;
+  padding: 1rem;
+}
+/*---Contact Page---*/
+.contact-details {
+  margin: 0 2rem 2rem 2rem;
+}
+.form-label {
+  margin: 2rem;
+}
+textarea {
+  border-radius: 0.5rem;
+  border: 2px solid;
+  width: 100%;
+}
+input {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid;
+  height: 3rem;
+  margin: 1rem auto;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.5rem;
+}
+.btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 0.5rem;
+  font-family: "Source Code Pro", monospace;
+  color: #121012;
+  font-size: 1rem;
+  background: #f0df24;
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+  display: grid;
+  margin: 2rem auto;
+  width: 13rem;
+}
+
+.btn:hover {
+  background: #39ba06;
+  text-decoration: none;
+}
+
+/**--medium screen--*/
+
+@media (min-width: 43.45rem) and (max-width: 64.375rem) {
+  header {
+    display: grid;
+    grid-template-columns: 17rem auto;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    background-color: #ece9e6;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 2rem;
+    justify-self: end;
+    align-self: center;
+    margin-right: 1rem;
+  }
+  li a {
+    font-size: 1.5rem;
+    width: 10rem;
+  }
+
+  .logo {
+    display: grid;
+    border-radius: 0.5rem;
+    width: 10rem;
+    margin-left: 1rem;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem;
+  }
+  .message {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+
+  .product-img {
+    width: 25rem;
+    margin: 1rem auto;
+    border-radius: 0.65rem;
+    float: left;
+  }
+
+  .buy-button {
     display: grid;
     width: 10rem;
     background-color: #ffd502;
@@ -85,401 +212,262 @@ p {
     padding: 1rem 0.5rem;
     margin: 2rem auto;
     text-decoration: none;
-    font-weight: 50; 
-}
-.buy-button:hover {
-    color:#EAECC6;
- }
-.product-description {
+    font-weight: 50;
+  }
+  .buy-button:hover {
+    color: #eaecc6;
+  }
+  .product-description {
     display: grid;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     border-style: groove;
     border-radius: 0.65rem;
     text-align: justify;
     padding: 1rem;
-}
-/*---Contact Page---*/
+    font-size: large;
+  }
 
-
-.contact-details {
-    margin: 0 2rem 2rem 2rem;
-}
-.form-label {
-    margin: 2rem;
-}
-textarea {
-    border-radius: 0.5rem;
-    border: 2px solid;
-    width: 100%;
-}
-input {
-    width: 100%;
-    border-radius: 0.5rem;
-    border: 2px solid;
-    height: 3rem;
-    margin: 1rem auto;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1.5rem;
-}
-
-.btn {
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 0.5rem;
-    font-family: 'Source Code Pro', monospace;
-    color: #121012;
-    font-size: 1rem;
-    background: #f0df24;
-    padding: 0.625rem 1.25rem;
-    text-decoration: none;
+  .contact-form {
+    grid-template-columns: 1fr 1fr;
     display: grid;
-    
+    margin-top: 3rem;
+  }
+  .contact-details {
+    grid-column: 2/3;
+    font-size: 1.5rem;
+  }
+  .form-label {
+    font-size: 1.75rem;
+    border-radius: 0.5rem;
+  }
+  .btn {
     margin: 2rem auto;
     width: 13rem;
     font-size: 1.25rem;
   }
-  
-  .btn:hover {
-    background: #39ba06;
-    text-decoration: none;
+  input {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.5rem;
   }
-
-/**--medium screen--*/
-
-@media (min-width: 43.45rem) and (max-width: 64.375rem) {
-     header {
-        display: grid;
-        grid-template-columns: 17rem auto;
-        border: 1px solid;
-        border-radius: 0.5rem;
-        background-color: #ECE9E6;
-        margin-top: 1rem;
-        padding: 1rem;
-
-    }
-    ul {
-        display: grid;
-        grid-template-columns: min-content min-content;
-        gap: 2rem;
-        justify-self: end;
-        align-self: center;
-        margin-right: 1rem;
-        
-    }
-    li a {
-        font-size: 1.5rem;
-        width: 10rem;
-    }
-   
-    .logo {
-        display: grid;
-        border-radius: 0.5rem;
-        width: 10rem;
-        margin-left: 1rem;
-    }
-    .product {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        margin: 1rem;
-        
-    }
-    .message {
-        font-size: 1rem;
-        line-height: 1.75rem;
-    }
-    p {
-        font-size: 2rem;
-    }
-
-    .product-container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 1rem;
-    ;
-    }
-
-    .product-img {
-        width: 25rem;
-        margin: 1rem auto;
-        border-radius: 0.65rem;
-        float:left;
-    }
-    
-    .buy-button {
-        display: grid;
-        width: 10rem;
-        background-color: #ffd502;
-        border-style: 1px solid;
-        border-radius: 0.5rem;
-        text-align: center;
-        padding: 1rem 0.5rem;
-        margin: 2rem auto;
-        text-decoration: none;
-        font-weight: 50; 
-    }
-    .buy-button:hover {
-        color:#EAECC6;
-     }
-    .product-description {
-        display: grid;
-        background-color: #EAEAEA;
-        border-style: groove;
-        border-radius: 0.65rem;
-        text-align: justify;
-        padding: 1rem;
-        font-size: large;
-    }
-    
-    .contact-form {
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        margin-top: 3rem;
-    }
-    .contact-details {
-        grid-column: 2/3;
-        font-size: 1.5rem;    
-    }
-    .form-label {
-        font-size: 1.75rem;
-        border-radius: 0.5rem;
-    }
-    .btn {
-        margin: 2rem auto;
-        width: 13rem;
-        font-size: 1.25rem;
-    }
-    input {
-        font-family: 'Source Code Pro', monospace;
-        font-size: 1.5rem;
-    }
 }
 /*--Laptop/ipadPro screen--*/
 
 @media (min-width: 64.376rem) and (max-width: 102rem) {
-    header {
-        display: grid;
-        grid-template-columns: 25rem auto;
-        border: 1px solid;
-        border-radius: 0.25rem;
-        background-color: #ECE9E6;
-        margin-top: 1rem auto;
-        padding: 1rem;
-    }
-    .logo {
-        width: 15rem;
-        margin-left: 1rem;
-        display: grid;
-        border-radius: 0.5rem;
-       
-    }
-    ul {
-        display: grid;
-        grid-template-columns: min-content min-content;
-        gap: 2rem;
-        justify-self: end;
-        align-self: center;
-        margin-right: 1rem; 
-    }
-    li a {
-        font-size: 1.5rem;
-        width: 10rem;
-    }
-    .product {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
-    }
-    .img {
-        width: 100%;
-    }
-    .message {
-        font-size: 1rem;
-    }
-    .product-container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 1rem;
-    }
-    .product-img {
-        display: grid;
-        width: 30rem;
-        margin: 2rem 1rem;
-        border-radius: 0.65rem;
-    }
-    .product-description {
-        display: grid;
-        border-style: groove;
-        border-radius: 0.65rem;
-        text-align: left;
-        padding: 1rem;
-        font-size: 2rem;
-    }
-    .buy-button {
-        display: grid;
-        width: 15rem;
-        background-color: #ffd502;
-        border-style: 1px solid;
-        border-radius: 0.5rem;
-        text-align: center;
-        padding: 1.75rem 1rem;
-        margin: 2rem auto;
-        text-decoration: none;
-        font-size: 1.5rem;
-    }
-    
-    .contact-form {
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        margin-top: 3rem;
-    }
-    .contact-details {
-        grid-column: 2/3;
-        font-size: 2rem;    
-    }
-    .form-label {
-        font-size: 1.75rem;
-    }
-    .btn {
-        margin: 2rem auto;
-        width: 13rem;
-        font-size: 1.5rem;
-    }
-    input {
-        font-family: 'Source Code Pro', monospace;
-        font-size: 1.5rem;
-    }
+  header {
+    display: grid;
+    grid-template-columns: 25rem auto;
+    border: 1px solid;
+    border-radius: 0.25rem;
+    background-color: #ece9e6;
+    margin-top: 1rem auto;
+    padding: 1rem;
+  }
+  .logo {
+    width: 15rem;
+    margin-left: 1rem;
+    display: grid;
+    border-radius: 0.5rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 2rem;
+    justify-self: end;
+    align-self: center;
+    margin-right: 1rem;
+  }
+  li a {
+    font-size: 1.5rem;
+    width: 10rem;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .img {
+    width: 100%;
+  }
+  .message {
+    font-size: 1rem;
+  }
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+  .product-img {
+    display: grid;
+    width: 30rem;
+    margin: 2rem 1rem;
+    border-radius: 0.65rem;
+  }
+  .product-description {
+    display: grid;
+    border-style: groove;
+    border-radius: 0.65rem;
+    text-align: left;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .buy-button {
+    display: grid;
+    width: 15rem;
+    background-color: #ffd502;
+    border-style: 1px solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1.75rem 1rem;
+    margin: 2rem auto;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    margin-top: 3rem;
+  }
+  .contact-details {
+    grid-column: 2/3;
+    font-size: 2rem;
+  }
+  .form-label {
+    font-size: 1.75rem;
+  }
+  .btn {
+    margin: 2rem auto;
+    width: 13rem;
+    font-size: 1.5rem;
+  }
+  input {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.5rem;
+  }
 }
 
 /****Large Screen****/
 @media (min-width: 101.1rem) {
-    header {
-        display: grid;
-        grid-template-columns: 25rem auto;
-        border-radius: 1rem;
-        background-color: #ECE9E6;
-        padding: 1rem;
-    }
-    .logo {
-        display: grid;
-        width: 25rem;
-        margin-left: 1rem; 
-        padding: 1rem; 
-        border-radius: 0.5rem;
-        
-    }
-    ul {
-        display: grid;
-        grid-template-columns: min-content min-content;
-        gap: 2rem;
-        justify-self: end;
-        align-self: center;
-        padding-right: 3rem;
-    }
-    li a {
-        font-size: 1.5rem;
-        width: 13rem; 
-        padding: 1.5rem;
-        font-size: 1.25rem;
-        
-    }
-    .product {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
-    }
-    .img {
-        display: grid;
-        border-radius: 0.5rem;
-        width: 100%;
-        margin: auto;
-        padding-top: 2rem;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1rem;
-    }
-    p {
-        font-size: 1rem;
-        
-    }
-    .message {
-        font-size: 1rem;
-        text-align: center;
-
-    }
-    .product-container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 1rem;
-    }
-    .product-img {
-        display: grid;
-        margin: 1rem auto;
-        border-radius: 0.65rem;
-        width: 100%;
-
-    }
-    .product-description {
-        display: grid;
-        border-style: groove;
-        border-radius: 0.65rem;
-        text-align: left;
-        padding: 1rem;
-        margin-right: 3rem;
-        font-size: 2rem;
-    }
-    .buy-button {
-        display: grid;
-        width: 18rem;
-        background-color: #ffd502;
-        border-style: 1px solid;
-        border-radius: 0.5rem;
-        text-align: center;
-        padding: 1.75rem 1rem;
-        margin: 2rem auto;
-        text-decoration: none;
-        font-size: 2rem;
-    }
-    .contact-form {
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        margin-top: 3rem;
-        gap: 10rem;
-    }
-    .contact-details {
-        grid-column: 2/3;
-        font-size: 2rem; 
-        line-height: 2rem;
-        text-align: left;   
-    }
-    .form-label {
-        font-size: 1.65rem;
-        padding-left: 10rem;
-        border-radius: 0.5rem;
-
-    }
-    .btn {
-        margin: 3rem auto;
-        width: 15rem;
-        font-size: 2rem;
-    }
-    textarea {
-        border-radius: 0.5rem;
-        border: 2px solid;
-        width: 100%;
-        height: 10rem;
-        font-size: 2rem;
-    }
-    input {
-        width: 100%;
-        border-radius: 0.5rem;
-        border: 2px solid;
-        height: 5rem;
-        margin: 1rem auto;
-        font-size: 2rem;
-        font-family: 'Source Code Pro', monospace;
-    }
-}    
+  header {
+    display: grid;
+    grid-template-columns: 25rem auto;
+    border-radius: 1rem;
+    background-color: #ece9e6;
+    padding: 1rem;
+  }
+  .logo {
+    display: grid;
+    width: 25rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 2rem;
+    justify-self: end;
+    align-self: center;
+    padding-right: 3rem;
+  }
+  li a {
+    width: 13rem;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .img {
+    display: grid;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .message {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+  .product-img {
+    display: grid;
+    margin: 1rem auto;
+    border-radius: 0.65rem;
+    width: 100%;
+  }
+  .product-description {
+    display: grid;
+    border-style: groove;
+    border-radius: 0.65rem;
+    text-align: left;
+    padding: 1rem;
+    margin-right: 3rem;
+    font-size: 2rem;
+  }
+  .buy-button {
+    display: grid;
+    width: 18rem;
+    background-color: #ffd502;
+    border-style: 1px solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1.75rem 1rem;
+    margin: 2rem auto;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  .contact-form {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    margin-top: 3rem;
+    gap: 10rem;
+  }
+  .contact-details {
+    grid-column: 2/3;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: left;
+  }
+  .form-label {
+    font-size: 1.65rem;
+    padding-left: 10rem;
+    border-radius: 0.5rem;
+  }
+  .btn {
+    margin: 3rem auto;
+    width: 15rem;
+    font-size: 2rem;
+  }
+  textarea {
+    border-radius: 0.5rem;
+    border: 2px solid;
+    width: 100%;
+    height: 10rem;
+    font-size: 2rem;
+  }
+  input {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid;
+    height: 5rem;
+    margin: 1rem auto;
+    font-size: 2rem;
+    font-family: "Source Code Pro", monospace;
+  }
+}
