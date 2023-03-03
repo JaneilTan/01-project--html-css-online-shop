@@ -246,7 +246,7 @@ input {
   }
 }
 /*--Laptop/ipadPro screen--*/
-/*
+
 @media (min-width: 64.376rem) and (max-width: 102rem) {
   header {
     display: grid;
@@ -342,7 +342,7 @@ input {
 }
 
 /****Large Screen****/
-/*
+
 @media (min-width: 101.1rem) {
   header {
     display: grid;
@@ -467,4 +467,3 @@ input {
     font-family: "Source Code Pro", monospace;
   }
 }
-*/
